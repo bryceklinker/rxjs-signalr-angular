@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
-import { createSignalRHub } from 'rxjs-signalr';
+import { createSignalRHub, SignalRHub } from 'rxjs-signalr';
 
 @Injectable()
 export class RxJSSignalRFactory {
-    createHub(hubName: string) {
-        return createSignalRHub(hubName);
+    createHub(hubName: string, url?: string) : SignalRHub {
+        return createSignalRHub(hubName, url);
     }
 }

@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: 8.1.2
+dependencies:
+  pre:
+    - echo "//registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN" >> ~/.npmrc
+deployment:
+  npm:
+    branch: master
+    commands:
+      - npm run build
+      - npm run publish:npm

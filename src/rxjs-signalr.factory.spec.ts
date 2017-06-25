@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { SignalRHub } from 'rxjs-signalr';
 import { RxJSSignalRFactory } from './rxjs-signalr.factory';
 
 describe('RxJSSignalRFactory', () => {
@@ -13,10 +14,17 @@ describe('RxJSSignalRFactory', () => {
     })
 
     beforeEach(() => {
-        factory = new RxJSSignalRFactory();
+        factory = TestBed.get(RxJSSignalRFactory);
     })
 
     it('should create signalr hub', () => {
-        expect(factory.createHub('bob')).toBeDefined();
+        const hub = factory.createHub('bob');
+        expect(hub instanceof SignalRHub).toBeTruthy();
+    })
+
+    it('should create signalr hub using url', () => {
+        const hub = factory.createHub('bob', '/myhub');
+        console.log(hub);
+        expect(hub.url).toBe('/myhub');
     })
 })
