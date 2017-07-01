@@ -2,8 +2,8 @@
   "name": "rxjs-signalr-angular",
   "version": "0.0.0",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "ng test --single-run",
     "test:watch": "ng test",
