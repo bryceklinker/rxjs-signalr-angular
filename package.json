@@ -5,16 +5,11 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "test:single": "ng test --single-run",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "prepare": "tsc"
+    "prepare": "tsc",
+    "publish:npm": "publish"
   },
-  "private": true,
   "dependencies": {
     "@angular/core": "4.0.0",
     "rxjs": "5.1.0",
