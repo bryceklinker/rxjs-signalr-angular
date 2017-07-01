@@ -1,3 +1,4 @@
+import { RxJSSignalRModule } from './rxjs-signalr.module';
 import { TestBed } from '@angular/core/testing';
 import { SignalRHub } from 'rxjs-signalr';
 import { RxJSSignalRFactory } from './rxjs-signalr.factory';
@@ -7,9 +8,7 @@ describe('RxJSSignalRFactory', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            providers: [
-                RxJSSignalRFactory
-            ]
+            imports: [RxJSSignalRModule]
         })
     })
 

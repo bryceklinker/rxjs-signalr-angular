@@ -11,9 +11,14 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "skipLibCheck": true,
     "lib": [
       "es2016",
       "dom"
     ]
-  }
+  },
+  "exclude": [
+      "node_modules",
+      "dist"
+  ]
 }

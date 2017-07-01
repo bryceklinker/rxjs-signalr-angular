@@ -1,1 +1,0 @@
-{"version":3,"file":"rxjs-signalr.factory.js","sourceRoot":"","sources":["rxjs-signalr.factory.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA2C;AAE3C,6CAA4D;AAG5D,IAAa,kBAAkB;IAA/B;IAIA,CAAC;IAHG,sCAAS,GAAT,UAAU,OAAe,EAAE,GAAY;QACnC,MAAM,CAAC,+BAAgB,CAAC,OAAO,EAAE,GAAG,CAAC,CAAC;IAC1C,CAAC;IACL,yBAAC;AAAD,CAAC,AAJD,IAIC;AAJY,kBAAkB;IAD9B,iBAAU,EAAE;GACA,kBAAkB,CAI9B;AAJY,gDAAkB"}
