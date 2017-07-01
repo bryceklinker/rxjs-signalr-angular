@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "ng test",
-    "test:single": "ng test --single-run",
+    "test": "ng test --single-run",
+    "test:watch": "ng test",
     "prepare": "tsc",
     "publish:npm": "publish"
   },
